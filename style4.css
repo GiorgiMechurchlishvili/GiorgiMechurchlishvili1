@@ -1,0 +1,298 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+}
+
+header {
+  background-color: #4b2c20;
+  color: white;
+  padding: 10px 0 40px 0;
+}
+
+.header-top,
+.header-bottom {
+  width: 95%;
+  margin: 0 auto;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 0;
+}
+
+nav h1 a {
+  text-decoration: none;
+  color: #f39c12;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+svg {
+  width: 30px;
+  height: 30px;
+}
+
+.header-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  padding: 50px;
+}
+
+.content-left {
+  flex: 1;
+}
+
+.content-right {
+  flex: 1;
+}
+
+.left-first {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 15px;
+}
+
+.top {
+  background-color: rgb(196, 106, 41);
+  color: #fff;
+  padding: 5px 15px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.middle-english {
+  font-size: 56px;
+  font-weight: bold;
+  margin: 0;
+  color: white;
+}
+
+.highlight {
+  color: #f39c12;
+}
+
+.middle-georgian {
+  font-size: 15px;
+  max-width: 400px;
+}
+.menu {
+  display: inline-flex;
+  align-items: center;
+  background-color: rgb(196, 106, 41);
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  gap: 10px;
+}
+
+.menu svg {
+  fill: white;
+  width: 20px;
+}
+
+.bottom-second {
+  margin-top: 60px;
+}
+
+.bottom-second ul {
+  display: flex;
+  gap: 50px;
+  list-style: none;
+  padding: 0;
+}
+
+.bottom-second li {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.stat-number {
+  color: #f39c12;
+  font-size: 32px;
+  font-weight: bold;
+  font-family: helvetica;
+}
+
+.stat-text {
+  color: white;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+iframe {
+  width: 100%;
+  border-radius: 15px;
+}
+
+.section-top {
+  background-color: rgb(196, 106, 41);
+  padding: 0;
+  width: 100%;
+}
+
+.section-top ul {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  list-style: none;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.section-top li {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+  color: white;
+  justify-content: center;
+  flex: 1; /* თითოეული ელემენტი იკავებს თანაბარ ადგილს */
+  padding: 60px 20px;
+  position: relative;
+}
+.section-top li:not(:last-child) {
+  border-right: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.section-top svg {
+  fill: black;
+  width: 35px;
+  height: 35px;
+  margin-bottom: 0px;
+  margin-right: 10px;
+  flex-shrink: 0;
+}
+
+.text-container {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.section-top .bold {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.2;
+}
+
+.section-top .normal {
+  font-weight: normal;
+  font-size: 13px;
+  margin-top: 5px;
+}
+
+.section-bottom {
+  background-color: #f4f4f4;
+  padding: 80px 5%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  align-items: start;
+  box-sizing: border-box;
+}
+
+.small,
+.big {
+  grid-column: 1 / -1; /* გადაიჭიმება ყველა სვეტზე */
+  text-align: center;
+  margin: 0;
+}
+
+.small {
+  color: #c46a29;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 16px;
+}
+
+.big {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #2c2c2c;
+}
+
+.first,
+.second,
+.third,
+.fourth {
+  background-color: white;
+  border: 1.5px solid #e0e0e0; /*კანტი */
+  padding: 40px 20px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.first:hover,
+.second:hover,
+.third:hover,
+.fourth:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05); /* ნაზი ჩრდილი ჰოვერზე */
+}
+
+.section-bottom svg {
+  width: 60px;
+  height: 60px;
+  fill: #c46a29;
+  margin-bottom: 25px;
+}
+
+.product-container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.product {
+  font-weight: bold;
+  font-size: 20px;
+  color: #333;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.description {
+  font-size: 14px;
+  color: #777;
+  line-height: 1.5;
+  min-height: 45px; /* რომ ყველა ბარათი თანაბარი ჩანდეს */
+}
+
+.price {
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #c46a29;
+  font-size: 18px;
+  margin-top: 15px;
+  padding-top: 15px;
+  border-top: 1px dashed #ddd; /* მცირე გამყოფი ხაზი */
+}
